@@ -1,0 +1,34 @@
+{
+    "name": "vh-api",
+    "version": "1.0.0",
+    "description": "## API",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node app.js",
+        "test": "mocha --require @babel/register --watch --watch-extensions js './test/**/*.js'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://claudiomaxx@github.com/claudiomaxx/vh-api.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/claudiomaxx/vh-api/issues"
+    },
+    "homepage": "https://github.com/claudiomaxx/vh-api#readme",
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.3",
+        "@babel/core": "^7.4.3",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.4.3",
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1",
+        "chai-http": "^4.2.1",
+        "mocha": "^6.1.4",
+        "nodemon": "^1.18.11"
+    }
+}
