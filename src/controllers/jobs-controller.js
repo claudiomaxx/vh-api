@@ -1,5 +1,3 @@
-import { Router } from 'express';
-
 const getJobs = ({ res }) => {
     res.send([
         {
@@ -16,8 +14,7 @@ const getJobsById = (req, res) => {
     });
 };
 
-const router = Router();
-router.get('/', getJobs);
-router.get('/:id', getJobsById);
-
-export default router;
+export default {
+    getJobs,
+    getJobsById,
+};

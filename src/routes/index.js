@@ -1,3 +1,9 @@
-import jobs from './jobs-route';
+import { Router } from 'express';
+import jobsController from '../controllers/jobs-controller';
 
-export { jobs };
+const router = Router();
+
+router.get('/jobs', jobsController.getJobs);
+router.get('/jobs/:id', jobsController.getJobsById);
+
+export default router;

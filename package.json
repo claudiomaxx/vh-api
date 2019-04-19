@@ -26,7 +26,8 @@
     "homepage": "https://github.com/claudiomaxx/vh-api#readme",
     "dependencies": {
         "@babel/cli": "^7.4.3",
-        "express": "^4.16.4"
+        "express": "^4.16.4",
+        "swagger-ui-express": "^4.0.2"
     },
     "devDependencies": {
         "@babel/core": "^7.4.3",

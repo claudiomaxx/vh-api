@@ -1,6 +1,6 @@
 import request from 'supertest';
 
-import { getJobs } from '../src/routes/jobs-route';
+import { getJobs } from '../src/controllers/jobs-controller';
 import app from '../src/app';
 
 before(() => {
@@ -16,16 +16,16 @@ describe('Test routes:', () => {
     });
 
     // test get jobs
-    it('GET /jobs', done => {
+    it('GET /api/jobs', done => {
         request(app)
-            .get('/jobs')
+            .get('/api/jobs')
             .expect(200, done);
     });
 
     // test get jobs by id
-    it('GET /jobs/:id', done => {
+    it('GET /api/jobs/:id', done => {
         request(app)
-            .get('/jobs/1')
+            .get('/api/jobs/1')
             .expect(res => {
                 res.body;
             })
