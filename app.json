@@ -1,0 +1,8 @@
+{
+    "name": "vh-api",
+    "description": "vh-api using Express 4",
+    "repository": "https://github.com/claudiomaxx/vh-api",
+    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+}
