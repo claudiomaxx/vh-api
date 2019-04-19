@@ -11,6 +11,4 @@ app.get('/', ({ res }) => {
     res.send('WHT!');
 });
 
-app.listen(port, _ => console.log(`It's ON! ${port}`));
-
-export default app;
+export default app.listen(port);
