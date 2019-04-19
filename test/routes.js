@@ -5,8 +5,8 @@ import chaiPromise from 'chai-as-promised';
 chai.use(chaiHttp);
 chai.use(chaiPromise);
 
-import { getJobs } from '../routes/jobs-route';
-import app from '../app';
+import { getJobs } from './routes/jobs-route';
+import app from './app';
 import { doesNotReject } from 'assert';
 
 // let req = {
